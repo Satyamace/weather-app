@@ -25,8 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
   async function fetchWeatherData(cityName) {
-    const url = `/api/weather?city=${encodeURIComponent(cityName)}`;
-
+    const url = `https://weather-app-satyam-337c.vercel.app/api/weather?city=${encodeURIComponent(cityName)}`;
     const response = await fetch(url);
 
     if (!response.ok) {
